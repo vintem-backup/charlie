@@ -2,4 +2,4 @@
 .vscode
 .directory
 .local_tests
-.AWS/credentials_for_AWS.txt
+.server_side/credentials_for_AWS.txt
