@@ -1,0 +1,5 @@
+.credentials/*
+.vscode
+.directory
+.local_tests
+.AWS/credentials_for_AWS.txt

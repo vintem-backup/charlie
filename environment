@@ -1,0 +1,5 @@
+server_name=PROD_(AWS_EC2)
+image_name=img_pplne_tlgrm_msg
+container_name=ctn_pplne_tlgrm_msg
+docker_host=registry.gitlab.com
+path_to_image=pandazord/devops_ex1
