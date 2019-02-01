@@ -3,3 +3,4 @@
 .directory
 .local_tests
 .server_side/credentials_for_AWS.txt
+gitlab_authentication.sh
