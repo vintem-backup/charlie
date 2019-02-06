@@ -1,12 +1,23 @@
 version: '3'
 
 services:
-  charlie:
-    build: .
-    container_name: charlie
+  core_app:
+    build: core_app/
+    ports:
+      - 9200:9200
+    container_name: core_app
+    depends_on:
+      - bd_es
+
+  get_data:
+    build: get_data/
+    ports:
+      - 9200:9200
+    container_name: get_data
     depends_on:
       - bd_es
   
+  #Não teria de ser declarado primeiro, já que tem de subir primeiro?
   bd_es:
     build: bd_es/
     ports:
@@ -15,8 +26,8 @@ services:
     volumes:
       - esdata:/usr/share/elasticsearch/data
 
+#Por que declara o volume novamente?
 volumes:
   esdata:
-
 
 

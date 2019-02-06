@@ -28,7 +28,7 @@ from modules import notifica_ciclo
 
 #Procura os diretórios de dados e log, se não existirem, cria-os.
 
-param = open('parametros.txt').readlines(); par = param[1].split()[2]
+param = open('parameters.txt').readlines(); par = param[1].split()[2]
 
 par = param[1].split()[2]; candle = param[0].split()[2]; medcurta = int(param[2].split()[2])
 medlonga = int(param[3].split()[2])
@@ -98,4 +98,3 @@ while True:
     print('Time sleep de {} seg'.format(descanso))
     
     time.sleep(descanso)
-

@@ -1,0 +1,15 @@
+candle = 15
+par = BTCUSDT
+medcurta = 25
+medlonga = 2345
+datapath = data/binance/klines/{}/{}min/
+logpath_dev = logs/dev/{}/{}min/
+logpath_prod = logs/prod/{}/{}min/
+ambiente = dev #obsoleto
+periodo = 300 #obsoleto
+noperacoes = 1000000 #obsoleto
+ativo = 0 #PARA BACKTEST
+base = 1000 #PARA BACKTEST
+time_aq = 1 year ago UTC
+freq_notif(min) = 12
+fator = 0.5 #Limitador_de_montante

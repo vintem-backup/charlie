@@ -4,4 +4,4 @@ RUN pip install -r requirements.txt
 ADD . /worker
 WORKDIR /worker
 COPY code/* worker/
-CMD python worker/app.py
+CMD python worker/main.py
