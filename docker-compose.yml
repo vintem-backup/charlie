@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  charlie:
+    build: .
+    container_name: charlie
+    depends_on:
+      - bd_es
+  
+  bd_es:
+    build: bd_es/
+    ports:
+      - 9200:9200
+    container_name: bd_es
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+
+volumes:
+  esdata:
+
+
+
