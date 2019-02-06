@@ -17,6 +17,17 @@ services:
     depends_on:
       - bd_es
   
+  web_app:
+    build: web_app/
+    ports:
+      - 9200:9200
+      - 80:80
+    container_name: web_app
+    depends_on:
+      - bd_es
+      - get_data
+      - core_app
+  
   #Não teria de ser declarado primeiro, já que tem de subir primeiro?
   bd_es:
     build: bd_es/
@@ -29,5 +40,3 @@ services:
 #Por que declara o volume novamente?
 volumes:
   esdata:
-
-
