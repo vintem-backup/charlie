@@ -1,7 +1,7 @@
 # Charlie tradebot: Readme
 
 ## Create........: 2019-JAN-23
-## Last Update...: 2019-FEV-01
+## Last Update...: 2019-FEV-07
 #### Author: Marcus Mello (mandealista@gmail.com)
 
 [PT_br]
@@ -11,5 +11,3 @@
 ## A estratégia em linhas gerais
 
 ## Configurando framework e serviços
-
-#TESTES DE BRANCH-4

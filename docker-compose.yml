@@ -1,39 +1,39 @@
 version: '3'
 
 services:
-  core_app:
-    build: core_app/
+  app_core:
+    build: app_core/
     ports:
       - 9200:9200
-    container_name: core_app
+    container_name: app_core
     depends_on:
-      - bd_es
+      - app_es_db
 
-  get_data:
-    build: get_data/
+  app_get_data:
+    build: app_get_data/
     ports:
       - 9200:9200
-    container_name: get_data
+    container_name: app_get_data
     depends_on:
-      - bd_es
+      - app_es_db
   
-  web_app:
-    build: web_app/
+  app_web:
+    build: app_web/
     ports:
       - 9200:9200
       - 80:80
-    container_name: web_app
+    container_name: app_web
     depends_on:
-      - bd_es
-      - get_data
-      - core_app
+      - app_es_db
+      - app_get_data
+      - app_core
   
   #Não teria de ser declarado primeiro, já que tem de subir primeiro?
-  bd_es:
-    build: bd_es/
+  app_es_db:
+    build: app_es_db/
     ports:
       - 9200:9200
-    container_name: bd_es
+    container_name: app_es_db
     volumes:
       - esdata:/usr/share/elasticsearch/data
 
