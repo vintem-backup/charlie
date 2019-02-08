@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  app_es_db:
+    build: .
+    ports:
+      - 9200:9200
+    container_name: app_es_db
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+
+#Por que declara o volume novamente?
+volumes:
+  esdata:
+    driver: local
