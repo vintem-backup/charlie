@@ -1,3 +1,4 @@
 .vscode
 .directory
-dev/*
+dev/local_tests/credentials.txt
+dev/credentials/*
