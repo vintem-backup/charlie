@@ -17,8 +17,8 @@ echo 'Parando e excluindo container'
 docker stop $app_get_data_container_name && docker container rm $app_get_data_container_name
 
 #3 - Construção do Artefato
-echo 'Construindo imagem'
-docker image build -t $app_get_data_image_name .
+echo 'Construindo imagem (será mesmo necessário, ou baixa se não ?)'
+#docker image build -t $app_get_data_image_name .
 
 #4 - Roda container
 echo 'Rodando container'
