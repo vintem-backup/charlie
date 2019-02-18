@@ -1,0 +1,20 @@
+# Entrys: key=value. Relevants paramaters, environmet variable, paths, etc
+
+#Environment
+project_name=charlie
+host-server-alias=PROD-(AWS-EC2)
+
+core-docker-host=registry.gitlab.com
+core-path-to-image=pandazord/charlie
+core-image-name=core-image
+core-container-name=core-container
+
+get-data-docker-host=docker.elastic.co
+get-data-path-to-image=elasticsearch
+get-data-image-name=es-db-image
+get-data-container-name=es-db-container
+
+web-docker-host=registry.gitlab.com
+web-path-to-image=pandazord/charlie
+web-image-name=web-image
+web-container-name=web-container

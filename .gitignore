@@ -2,3 +2,4 @@
 .directory
 dev/local_tests/credentials.txt
 dev/credentials/*
+config-backup/*
