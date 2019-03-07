@@ -3,3 +3,5 @@
 dev/local_tests/credentials.txt
 dev/credentials/*
 config-backup/*
+app/backend/get_data/dev_data/modules/__pycache__
+app/backend/get_data/dev_data/notebooks/.ipynb_checkpoints/
